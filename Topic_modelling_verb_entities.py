@@ -50,9 +50,9 @@ for i in number_clusters:
     # Creating the object for LDA model using gensim library
     Lda = gensim.models.ldamodel.LdaModel
     # Running and Trainign LDA model on the document term matrix.
-    ldamodel = Lda(doc_term_matrix, num_topics=1, id2word = dictionary, passes=50)
+    ldamodel = Lda(doc_term_matrix, num_topics=15, id2word = dictionary, passes=50)
     
-    res = ldamodel.print_topics(num_topics=1, num_words=15)
+    res = ldamodel.print_topics(num_topics=15, num_words=5)
     
     filename = 'topics_cluster_' + str(i)
     f = open(filename,'w')
