@@ -73,10 +73,6 @@ def cluster_sentences(sentences, nb_of_clusters):
 
     stop_words=stopwords.words('german'),
 
-    max_df=0.9,
-
-    min_df=0.1,
-
     lowercase=True)
 
     #builds a tf-idf matrix for the sentences
